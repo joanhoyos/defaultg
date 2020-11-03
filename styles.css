@@ -1,0 +1,94 @@
+
+.main{
+  background: #283048;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #859398, #283048);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #859398, #283048); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  
+}
+.main h1, h2, a, h3, span{
+  color: white
+}
+.main a :hover{
+  color: snow;
+}
+.navbar{
+  background: #c31432;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #240b36, #c31432);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #240b36, #c31432); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+.carousel img{
+  height: 55vh;
+  object-fit: cover;
+  background: #c31432;  /* fallback for old browsers */
+ background: -webkit-linear-gradient(to right, #240b36, #c31432);  /* Chrome 10-25, Safari 5.1-6 */
+ background: linear-gradient(to right, #240b36, #c31432); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+.contact{
+  color: black;
+}
+
+.overlay h1{
+  z-index: 1000;
+}
+
+
+/* .card-conrainer{
+  display: flex;
+  justify-content: center;
+} */
+.cards{
+  margin: 1em auto;
+}
+/* .card-color{
+  background-color: #e3f7e3;
+} */
+.card-color img{
+  object-fit: cover;
+}
+.btn-default{
+  color: white;
+  background-color:#286d68;
+}
+.btn-default:hover{
+  background-color: #1e4b48;
+  cursor: pointer;
+  color: white;
+}
+.card-body a:hover{
+  text-decoration: none;
+}
+
+.footer{
+  background: #c31432;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #240b36, #c31432);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #240b36, #c31432); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  
+}
+.social-row{
+  width: fit-content;
+  margin: auto;
+}
+
+
+/* section pages */
+
+ul.navbar-nav-model, .section-cards{
+  display: none;
+}
+
+.container-image img{
+  width: 100%;
+  min-width: 100%;
+  border-radius: 5px;
+}
+.container-gemer{
+  display: grid;
+  justify-items: center;
+}
+
+.container-gemer img{
+  width: 20%;
+}
