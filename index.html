@@ -3,55 +3,58 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" description="code is everything">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-  <link rel="icon" type="imege/png" href="imgs/favicon.jpg">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+  <link rel="icon" type="image/ico" href="imgs/favicon.ico">
   <link rel="stylesheet" href="styles.css">
-  <link rel="stylesheet" href="animations.css">
-  <title>Default G.</title>
+
+  <title>Default G</title>
+  
 </head>
+
 <body>
-  <div class="main" id="navbar">
-    <!-- header -->
-    <header class="header fixed-top fadeInDown">
-      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand ml-5" href="#">Default G</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ml-5">
-            <li class="nav-item">
-              <a class="nav-link" href="#description">HOW I AM? </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#hobbies">PROFILE</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#footer">CONTACT</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
-      
-    </header>
+
+ <!-- header -->
+  <nav class="navbar">
+    <div class="navbar__container">
+      <a href="/" id="navbar__logo">Default G</a>
+     <div class="navbar__toggle" id="mobile-menu">
+      <span class="bar"></span><span class="bar"></span>
+      <span class="bar"></span>
+     </div>
+     <ul class="navbar__menu">
+       <li class="navbar-item">
+         <a href="/" class="navbar__links">Home</a>
+       </li>
+       <li class="navbar-item">
+       <a href="portafolio.html" class="navbar__links">Portafolio</a>
+       </li>
+       <li class="navbar-item">
+         <a href="contacto.html" class="navbar__links">Contacto</a>
+       </li>
+      </ul>
+    </div> 
+  </nav>
+
+
+
   
    
   
     <!-- section description -->
-    <section class="themes" id="description">
-      <h3 class="card-title mt-5 text-center fadeIn">HOW I AM?</h3>
+    <section class="themes" id="home">
+      <h3 class="card-title mt-5 text-center fadeIn">Home</h3>
       <div class="container-fluid mt-5 ">
         <div class="col">
           <div class="card bg-light mb-3 col-12 card-color fadeInUp">
             <div class="row no-gutters">
               <div class="col-md-4">
-                <img src="imgs/profile.jpg" class="card-img" alt="hero">
+                <img src="imgs/lista.png" class="card-img" alt="hero">
               </div>
               <div class="col-md-8 card-color">
                 <div class="card-body">
                   <p class="card-text">I AM A VIDEO CREATOR FOR YOUTUBE</p>
-                  <p> I CAN HELP YOU <a class="contact" href="#footer">CONTACT</a></p>
-                  <p class="card-text"><small class="text-muted">DON'T GIVE UP NEVER!</small></p>
+                  <p> I CAN HELP YOU <a class="contact" href="contacto.html">Contacto</a></p>
+                  <p class="card-text"><small class="text-muted"></small></p>
                 </div>
               </div>
             </div>
@@ -61,16 +64,16 @@
     </section>
   
     <!-- section description -->
-    <section class="hobbies text-center" id="hobbies">
-      <h3 class="mt-5 fadeIn">hoobies for me</h3>
+    <section class="Portafolio text-center" id="Portafolio">
+      <h3 class="mt-5 fadeIn">Portafolio</h3>
       <div class="container mb-5 mt-5">
         <div class="row">
           <div class="card-deck fadeInUp card-conrainer">
             <div class="col col-sm-10 col-md-6 col-lg-4 cards">
               <div class="card card-md-6 card-color">
-                <img src="imgs/cards/code.jpg" height="120" class="card-img-top" alt="...">
+                <img src="imgs/cards/developer.jpg" height="120" class="card-img-top" alt="...">
                 <div class="card-body">
-                  <h5 class="card-title">programing</h5>
+                  <h5 class="card-title">Programador- Programing </h5>
                   <p class="card-text">
                       I am a programing for 1 year, i learn about html, css, js or javascript. 
                       Also, i learn a litle about python and linux.
@@ -84,13 +87,63 @@
         </div>
       </div>
     </section>
+
+
+
+    
+ <!-- carrusel -->
+ <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+    <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+    <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+  </ol>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="imgs/nomadadigital.png" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Aprendizaje Digital</h5>
+        <p>Gracias al aprendizaje virtual, se puede aprender
+          lenguajes de programacioin y diferentes habilidades
+          para emprender o cooperar a la enconomia personal
+          y local. NO ESPERES MAS...
+        </p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="imgs/social.png" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Comunidad</h5>
+        <p>La counidad es tu gran aliadad, creala, mejorala, haz que 
+          evolucione y crezca junto a ti.
+        </p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="imgs/youtube.png" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Youtube</h5>
+        <p>Excelente medio para aprender, ganar dinero y entretenerte</p>
+      </div>
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previo</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Siguiente</span>
+  </a>
+</div>
+
   
     <!-- footer -->
     <footer class="footer pb-3" id="footer">
       <div class="container-fluid">
         <div class="row">
           <div class="col text-center mt-3">
-            <h2 class="fadeIn">CONTACT</h2>
+            <h2 class="fadeIn">Contacto</h2>
           </div>
         </div>
         <div class="row social-row mt-2 mb-2">
@@ -116,7 +169,7 @@
             </a>
           </div>
         </div>
-        <span>Design by <a href="https://github.com/joanhoys0719"> Default G.</a></span>
+        <span>Design by <a href="https://github.com/joanhoys0719"> Default G</a></span>
       </div>
     </footer>
   </div>
